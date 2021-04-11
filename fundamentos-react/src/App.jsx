@@ -1,8 +1,9 @@
 import "./App.css";
 import React from "react";
 
+import ParOuImpar from './components/condicional/ParOuImpar';
 import TabelaProdutos from './components/repeticao/TabelaProdutos';
-import Lista from "./components/repeticao/ListaAlunos";
+import ListaAlunos from "./components/repeticao/ListaAlunos";
 import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import Card from "./components/layout/Card";
@@ -10,13 +11,16 @@ import Aleatorio from "./components/basicos/Aleatorio";
 import Primeiro from "./components/basicos/Primeiro";
 import ComParametro from "./components/basicos/ComParametro";
 import Fragmento from "./components/basicos/Fragmento";
-import ListaAlunos from "./components/repeticao/ListaAlunos";
 
 export default (_) => (
   <div className="App">
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+      <Card titulo="#08 - Renderização Condicional" color="#982395">
+        <ParOuImpar numero={21}></ParOuImpar>
+      </Card>
+
       <Card titulo="#07 - Desafio Repetição" color="#FFBF00">
         <TabelaProdutos></TabelaProdutos>
       </Card>
